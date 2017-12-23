@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Dota2</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="images/gamepad.png" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body>
+    <div id="wrapper">
+        <header id="header">
+            <div class="inner">
+                <a href="index.html" class="logo">
+                    <span class="symbol"></span><span class="title">home</span>
+                </a>
+            </div>
+        </header>
+
+        <script async="async" src="https://www.youtube.com/iframe_api"></script>
+        <script>
+            function onYouTubeIframeAPIReady() {
+                var player;
+                player = new YT.Player('muteYouTubeVideoPlayer', {
+                    videoId: 'CNXNEM1DEAI', // YouTube 影片ID
+                    width: 512,               // 播放器寬度 (px)
+                    height: 288,              // 播放器高度 (px)
+                    playerVars: {
+                        autoplay: 1,        // 在讀取時自動播放影片
+                        controls: 1,        // 在播放器顯示暫停／播放按鈕
+                        showinfo: 0,        // 隱藏影片標題
+                        modestbranding: 0,  // 隱藏YouTube Logo
+                        loop: 0,            // 讓影片循環播放
+                        fs: 0,              // 隱藏全螢幕按鈕
+                        cc_load_policty: 0, // 隱藏字幕
+                        iv_load_policy: 3,  // 隱藏影片註解
+                        autohide: 1         // 當播放影片時隱藏影片控制列
+                    },
+                    events: {
+                        onReady: function (e) {
+                            e.target.mute();
+                        }
+                    }
+                });
+            }
+
+            // Written by @labnol 
+        </script>
+
+        <div id="main">
+            <div class="inner">
+                <h1>Dota 2</h1>
+                <span class="image main">
+                    <img src="images/pic02.png" alt="" />
+                </span>
+                <table>
+                    <tr>
+                        <td>
+                            <p>
+                                <b>發行日期</b>  : 2013年7月9日
+                    <br />
+                                <br />
+                                <b>發行公司</b> : Valve
+                    <br />
+                                <br />
+                                <b>遊戲類型</b> : DOTA(MOBA)
+                    <br />
+                                <br />
+                                <b>同類型遊戲</b> : LOL、暴雪英霸
+                    <br />
+                                <br />
+                                <b>遊戲平台</b> : PC、PS4、Xbox One
+                    <br />
+                                <br />
+                                <b>人數變化圖</b>
+                                <br />
+                                <br />
+                                <img src="images/chart02.png" width="512" />
+                            </p>
+                        </td>
+
+                        <td>
+                            <section style="text-align: right">
+                                <br />
+                                <script id="muteYouTubeVideoPlayer"></script>
+                            </section>
+                        </td>
+                    </tr>
+                </table>
+
+                <p style="text-align: justify">
+                    <b>遊戲內容</b>
+                    <br />
+                    <br />
+                    DOTA最早的起源是魔獸爭霸中的一張自定義地圖，源自於一位名為Eul的玩家，加大了地圖並新增各種道具與野怪，製作了一款Defense of the Ancients，也就是DOTA的原型。在Eul神隱後，遊戲的更新與開發最後輾轉來到Icefrog手中，在與Valve公司合作後，誕生Dota 2這款膾炙人口的作品。身為始祖級別的MOBA遊戲，本作套用Valve的自有引擎「起源2」，在畫面與流暢度上都有著傲人的表現。除此之外，Dota 2擁有超過100位英雄，增加了玩家選擇的多樣性，更值得一提的是，這些英雄都可以免費使用，當然也有著多樣的造型可供選購，但商城並沒有販賣任何能增強角色的現金道具，所以基本上遊玩Dota 2是完全免費的。而這款遊戲也同樣有著大量的電競比賽，吸引了大量的人潮，並且在2017年國際邀請賽以6.9億台幣的獎金突破電競史上最高紀錄。               
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

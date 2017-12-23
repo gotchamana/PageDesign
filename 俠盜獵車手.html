@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>俠盜獵車手 V</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="images/gamepad.png" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body>
+    <div id="wrapper">
+        <header id="header">
+            <div class="inner">
+                <a href="index.html" class="logo">
+                    <span class="symbol"></span><span class="title">home</span>
+                </a>
+            </div>
+        </header>
+        <script async="async" src="https://www.youtube.com/iframe_api"></script>
+        <script>
+            function onYouTubeIframeAPIReady() {
+                var player;
+                player = new YT.Player('muteYouTubeVideoPlayer', {
+                    videoId: 'dEQldl7WPC0', // YouTube 影片ID
+                    width: 512,               // 播放器寬度 (px)
+                    height: 288,              // 播放器高度 (px)
+                    playerVars: {
+                        autoplay: 1,        // 在讀取時自動播放影片
+                        controls: 1,        // 在播放器顯示暫停／播放按鈕
+                        showinfo: 0,        // 隱藏影片標題
+                        modestbranding: 0,  // 隱藏YouTube Logo
+                        loop: 0,            // 讓影片循環播放
+                        fs: 0,              // 隱藏全螢幕按鈕
+                        cc_load_policty: 0, // 隱藏字幕
+                        iv_load_policy: 3,  // 隱藏影片註解
+                        autohide: 1         // 當播放影片時隱藏影片控制列
+                    },
+                    events: {
+                        onReady: function (e) {
+                            e.target.mute();
+                        }
+                    }
+                });
+            }
+
+            // Written by @labnol 
+        </script>
+
+        <div id="main">
+            <div class="inner">
+                <h1>俠盜獵車手 V</h1>
+                <span class="image main">
+                    <img src="images/pic05.png" alt="" />
+                </span>
+                <table>
+                    <tr>
+                        <td>
+                            <p>
+                                <b>發行日期</b>  : 2013年9月17日
+                    <br />
+                                <br />
+                                <b>發行公司</b> : Rockstar Games
+                    <br />
+                                <br />
+                                <b>遊戲類型</b> : 沙盒射擊遊戲
+                    <br />
+                                <br />
+                                <b>同類型遊戲</b> ： 看門狗
+                    <br />
+                                <br />
+                                <b>遊戲平台</b> : PC、PS3、PS4、Xbox 360、Xbox One
+                    <br />
+                                <br />
+                                <b>人數變化圖</b>
+                                <br />
+                                <br />
+                                <img src="images/chart05.png" width="512" />
+                            </p>
+                        </td>
+
+                        <td>
+                            <section style="text-align: right">
+                                <br />
+                                <script id="muteYouTubeVideoPlayer"></script>
+                            </section>
+                        </td>
+                    </tr>
+                </table>
+
+                <p style="text-align: justify">
+                    <b>遊戲內容</b>
+                    <br />
+                    <br />
+                    本款遊戲為系列作的第5代，在人像與畫面的精緻度上有著大幅度的提升。其遊戲背景設定在虛構的美國聖安地列斯州（San Andreas，以南加州為範本），玩者可隨意地在荒漠間和虛構的城市洛聖都（Los Santos，以洛杉磯為範本）中漫遊。除此之外，本作使用多主角故事線的系統，使遊玩的過程更加豐富，玩家可任意在三個角色間進行切換。除了單人的劇情模式外，線上模式更是將俠盜獵車手V推上了頂點，玩家可以創造一個屬於自己的模擬角色，與朋友在遊戲中一起遊玩。極高的自由度與多元的遊玩模式使得本款遊戲成為系列作的巔峰作品。               
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

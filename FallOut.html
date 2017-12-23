@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Fallout 4</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="images/gamepad.png" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body>
+    <div id="wrapper">
+        <header id="header">
+            <div class="inner">
+                <a href="index.html" class="logo">
+                    <span class="symbol"></span><span class="title">home</span>
+                </a>
+            </div>
+        </header>
+        <script async="async" src="https://www.youtube.com/iframe_api"></script>
+        <script>
+            function onYouTubeIframeAPIReady() {
+                var player;
+                player = new YT.Player('muteYouTubeVideoPlayer', {
+                    videoId: 'X5aJfebzkrM', // YouTube 影片ID
+                    width: 512,               // 播放器寬度 (px)
+                    height: 288,              // 播放器高度 (px)
+                    playerVars: {
+                        autoplay: 1,        // 在讀取時自動播放影片
+                        controls: 1,        // 在播放器顯示暫停／播放按鈕
+                        showinfo: 0,        // 隱藏影片標題
+                        modestbranding: 0,  // 隱藏YouTube Logo
+                        loop: 0,            // 讓影片循環播放
+                        fs: 0,              // 隱藏全螢幕按鈕
+                        cc_load_policty: 0, // 隱藏字幕
+                        iv_load_policy: 3,  // 隱藏影片註解
+                        autohide: 1         // 當播放影片時隱藏影片控制列
+                    },
+                    events: {
+                        onReady: function (e) {
+                            e.target.mute();
+                        }
+                    }
+                });
+            }
+
+            // Written by @labnol 
+        </script>
+
+        <div id="main">
+            <div class="inner">
+                <h1>Fallout 4</h1>
+                <span class="image main">
+                    <img src="images/pic04.png" alt=""/>
+                </span>
+                <table>
+                    <tr>
+                        <td>
+                            <p>
+                                <b>發行日期</b>  : 2015年11月10日
+                    <br />
+                                <br />
+                                <b>發行公司</b> : Bethesda Softworks
+                    <br />
+                                <br />
+                                <b>遊戲類型</b> : 沙盒射擊遊戲
+                    <br />
+                                <br />
+                                <b>同類型遊戲</b> ： Fallout 3
+                    <br />
+                                <br />
+                                <b>遊戲平台</b> : PC、PS4、Xbox One
+                    <br />
+                                <br />
+                                <b>人數變化圖</b>
+                                <br />
+                                <br />
+                                <img src="images/chart04.png" width="512" />
+                            </p>
+                        </td>
+
+                        <td>
+                            <section style="text-align: right">
+                                <br />
+                                <script id="muteYouTubeVideoPlayer"></script>
+                            </section>
+                        </td>
+                    </tr>
+                </table>
+
+                <p style="text-align: justify">
+                    <b>遊戲內容</b>
+                    <br />
+                    <br />
+                    本作為系列作的第4代，遊戲背景與系列作相同為核爆後的世界，以完全開放式的廢土世界為賣點。遊戲的自由度相當的高，玩家可以有多種劇情走向的選擇，並隨著劇情推演慢慢理解整個遊戲的全貌。而槍枝也是本作的重點之一，除了手槍、衝鋒槍、狙擊槍等，還有著非常多樣的武器供玩家選擇，並且可以進行改造，打造出最強的武器。而特殊的裝甲系統也可以滿足玩家對於機械的熱愛，玩家能夠駕著裝甲於開放的世界中進行冒險。最後值得一提的便是技能系統，隨著玩家的等級上升，可以使用技能點數從大量的技能當中選擇自己所喜歡的，而不同的技能也會對玩家的角色能力有著極大的影響，玩家可以針對自己的喜愛進行技能的選擇，讓遊玩更具有樂趣。               
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

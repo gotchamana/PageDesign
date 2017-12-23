@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>CS：GO</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="images/gamepad.png" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body>
+    <div id="wrapper">
+        <header id="header">
+            <div class="inner">
+                <a href="index.html" class="logo">
+                    <span class="symbol"></span><span class="title">home</span>
+                </a>
+            </div>
+        </header>
+        <script async="async" src="https://www.youtube.com/iframe_api"></script>
+        <script>
+            function onYouTubeIframeAPIReady() {
+                var player;
+                player = new YT.Player('muteYouTubeVideoPlayer', {
+                    videoId: 'hnLpBqjHOL8', // YouTube 影片ID
+                    width: 512,               // 播放器寬度 (px)
+                    height: 288,              // 播放器高度 (px)
+                    playerVars: {
+                        autoplay: 1,        // 在讀取時自動播放影片
+                        controls: 1,        // 在播放器顯示暫停／播放按鈕
+                        showinfo: 0,        // 隱藏影片標題
+                        modestbranding: 0,  // 隱藏YouTube Logo
+                        loop: 0,            // 讓影片循環播放
+                        fs: 0,              // 隱藏全螢幕按鈕
+                        cc_load_policty: 0, // 隱藏字幕
+                        iv_load_policy: 3,  // 隱藏影片註解
+                        autohide: 1         // 當播放影片時隱藏影片控制列
+                    },
+                    events: {
+                        onReady: function (e) {
+                            e.target.mute();
+                        }
+                    }
+                });
+            }
+
+            // Written by @labnol 
+        </script>
+
+        <div id="main">
+            <div class="inner">
+                <h1>CS：GO</h1>
+                <span class="image main">
+                    <img src="images/pic03.png" alt="" />
+                </span>
+                <table>
+                    <tr>
+                        <td>
+                            <p>
+                                <b>發行日期</b>  : 2012年8月21日
+                    <br />
+                                <br />
+                                <b>發行公司</b> : Valve、Hidden Path Entertainment
+                    <br />
+                                <br />
+                                <b>遊戲類型</b> : FPS射擊
+                    <br />
+                                <br />
+                                <b>同類型遊戲</b> ： AVA、Overwatch
+                    <br />
+                                <br />
+                                <b>遊戲平台</b> : PC、PS4、Xbox One
+                    <br />
+                                <br />
+                                <b>人數變化圖</b>
+                                <br />
+                                <br />
+                                <img src="images/chart03.png" width="512" />
+                            </p>
+                        </td>
+
+                        <td>
+                            <section style="text-align: right">
+                                <br />
+                                <script id="muteYouTubeVideoPlayer"></script>
+                            </section>
+                        </td>
+                    </tr>
+                </table>
+
+                <p style="text-align: justify">
+                    <b>遊戲內容</b>
+                    <br />
+                    <br />
+                    身為CS的系列作，CS：GO大幅提升了畫質與流暢度，並且支援家機進行遊玩。而由於使用Source引擎，在畫面呈現上有一定的水準，但對於電腦硬體的要求又相對沒這麼高，所以對於各種類型的玩家都相當合適。而本作也保留了舊的地圖，讓老玩家能夠回味經典，同時也製作新的地圖，為遊戲增添新鮮的感受。而多樣化的武器外觀也是本作的重點之一，玩家可以透過活動、升級、抽獎等途徑，來獲得不同的武器外觀，不過武器外觀並不會影響武器本身的素質。隨著CS：GO的上市，有許多相關的電競比賽相繼展開，透過實況與比賽的盛況，使CS：GO在全世界打開知名度。               
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

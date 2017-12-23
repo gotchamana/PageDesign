@@ -1,0 +1,107 @@
+﻿<!DOCTYPE HTML>
+
+<html>
+<head>
+    <title>絕地求生</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="images/gamepad.png" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <style type="text/css">
+        .auto-style1 {
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header id="header">
+            <div class="inner">
+                <a href="index.html" class="logo">
+                    <span class="symbol"></span><span class="title">home</span>
+                </a>
+            </div>
+        </header>
+        <script async="async" src="https://www.youtube.com/iframe_api"></script>
+        <script>
+            function onYouTubeIframeAPIReady() {
+                var player;
+                player = new YT.Player('muteYouTubeVideoPlayer', {
+                    videoId: 'ODWCbu_cuqk', // YouTube 影片ID
+                    width: 512,               // 播放器寬度 (px)
+                    height: 288,              // 播放器高度 (px)
+                    playerVars: {
+                        autoplay: 1,        // 在讀取時自動播放影片
+                        controls: 1,        // 在播放器顯示暫停／播放按鈕
+                        showinfo: 0,        // 隱藏影片標題
+                        modestbranding: 0,  // 隱藏YouTube Logo
+                        loop: 0,            // 讓影片循環播放
+                        fs: 0,              // 隱藏全螢幕按鈕
+                        cc_load_policty: 0, // 隱藏字幕
+                        iv_load_policy: 3,  // 隱藏影片註解
+                        autohide: 1         // 當播放影片時隱藏影片控制列
+                    },
+                    events: {
+                        onReady: function (e) {
+                            e.target.mute();
+                        }
+                    }
+                });
+            }
+
+            // Written by @labnol 
+        </script>
+
+        <div id="main">
+
+            <div class="inner">
+                <h1 class="auto-style1"><strong>絕地求生</strong></h1>
+                <span class="image main">
+                    <img src="images/pic01.png" alt="" />
+                </span>
+                <table>
+                    <tr>
+                        <td>
+                            <p>
+                                <br />
+                                <b>發行日期</b>  : 2017年3月23日
+                                <br />
+                                <br />
+                                <b>發行公司</b>  : 藍洞
+                                <br />
+                                <br />
+                                <b>遊戲類型</b> : FPS射擊、生存遊戲
+                                <br />
+                                <br />
+                                <b>同類型遊戲</b> : H1Z1、Fortnite
+                                <br />
+                                <br />
+                                <b>遊戲平台</b> : PC、PS4、Xbox One
+                                <br />
+                                <br />
+                                <b>人數變化圖</b>
+                                <br />
+                                <br />
+                                <img src="images/chart01.png" width="512" />
+                            </p>
+                        </td>
+
+                        <td>
+                            <section style="text-align: right">
+                                <br />
+                                <script id="muteYouTubeVideoPlayer"></script>
+                            </section>
+                        </td>
+                    </tr>
+                </table>
+                <p style="text-align: justify">
+                    <b>遊戲內容</b>
+                    <br />
+                    <br />
+                    這款由韓國遊戲公司所打造的生存遊戲，在全球掀起一股熱潮，直到今年12月止，遊玩人數仍然不停地在攀升。遊戲每次都是由最多100人為一場進行，玩家必須在手無寸鐵的狀況下，搭乘飛機選擇自己所欲降落的地點，並在開始後設法撿拾各種槍枝與道具，透過各種手段活到最後。除此之外，本作也支持團隊遊玩，由最多4人組成小隊，互相掩護，使得存活的手段與策略更佳的豐富與多元。這款遊戲的地圖相當大，也有著地形上面的差異，但隨著時間的推進，「電圈」會逐漸的收縮，逼迫僅剩的玩家不得不開始殺戮，而每次收縮到最後的地點皆不進相同，玩家必須設法在最後的決戰點存活下來，這也是本作最令人著迷的刺激感。就是這樣的魅力，使得絕地求生即便在畫面優化上仍有待加強，卻仍舊吸引了大批的玩家遊玩。而在2017年底，絕地求生也推出了測試伺服器，全新的地圖，優化後的介面，新增槍枝，期望在電玩界再投下一顆震撼彈。
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
