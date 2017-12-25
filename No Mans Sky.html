@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>No Man's Sky</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="images/gamepad.png" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script src="//code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css" />
+    <script>
+        $(function () {
+            $("#dialog").dialog({
+                autoOpen: false,
+                show: {
+                    effect: "puff",
+                    duration: 1000
+                },
+                hide: {
+                    effect: "puff",
+                    duration: 1000
+                },
+                width: "500",
+                resizable: false,
+                draggable: false
+            });
+
+            $("#opener").click(function () {
+                $("#dialog").dialog("open");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header id="header">
+            <div class="inner">
+                <a href="index.html" class="logo">
+                    <span class="symbol"></span><span class="title">home</span>
+                </a>
+            </div>
+        </header>
+        <script async="async" src="https://www.youtube.com/iframe_api"></script>
+        <script>
+            function onYouTubeIframeAPIReady() {
+                var player;
+                player = new YT.Player('muteYouTubeVideoPlayer', {
+                    videoId: 'Gvf0vq35JgU', // YouTube 影片ID
+                    width: 512,               // 播放器寬度 (px)
+                    height: 288,              // 播放器高度 (px)
+                    playerVars: {
+                        autoplay: 1,        // 在讀取時自動播放影片
+                        controls: 1,        // 在播放器顯示暫停／播放按鈕
+                        showinfo: 0,        // 隱藏影片標題
+                        modestbranding: 0,  // 隱藏YouTube Logo
+                        loop: 0,            // 讓影片循環播放
+                        fs: 0,              // 隱藏全螢幕按鈕
+                        cc_load_policty: 0, // 隱藏字幕
+                        iv_load_policy: 3,  // 隱藏影片註解
+                        autohide: 1         // 當播放影片時隱藏影片控制列
+                    },
+                    events: {
+                        onReady: function (e) {
+                            e.target.mute();
+                        }
+                    }
+                });
+            }
+
+            // Written by @labnol 
+        </script>
+
+        <div id="main">
+            <div class="inner">
+                <h1>No Man's Sky</h1>
+                <span class="image main">
+                    <img src="images/337.png" alt="" />
+                </span>
+                <table>
+                    <tr>
+                        <td>
+                            <p>
+                                <b>發行日期</b>  : 2016年8月9日
+                    <br />
+                                <br />
+                                <b>發行公司</b> : Hello Games
+                    <br />
+                                <br />
+                                <b>遊戲類型</b> : 動作冒險、生存遊戲
+                    <br />
+                                <br />
+                                <b>同類型遊戲</b> ：<a id="opener" href="javascript:">Minecraft</a>
+                    <br />
+                                <br />
+                                <b>遊戲平台</b> : PC、PS4
+                    <br />
+                                <br />
+                                <b>人數變化圖</b>
+                                <br />
+                                <br />
+                                <img src="images/17.png" width="512" />
+                            </p>
+                        </td>
+
+                        <td>
+                            <section style="text-align: right">
+                                <br />
+                                <script id="muteYouTubeVideoPlayer"></script>
+                            </section>
+                        </td>
+                    </tr>
+                </table>
+
+                <p style="text-align: justify">
+                    <b>遊戲內容</b>
+                    <br />
+                    <br />
+                    遊戲基於探索，生存，戰鬥和交易四大支柱。玩家可以自由地在隨機生成的確定性開放宇宙遊玩，這其中包括數以億計（1.8×1019）的行星，許多行星都有自己的動植物群。
+玩家參與到共享的宇宙中，能夠與其他玩家交換行星資訊，遊戲也完全可以離線遊玩。程式生成系統確保玩家在指定行星坐標時，可以找到生命形式和其他方面都相同的行星，不需要進一步存儲資料或從遊戲伺服器檢索。星系、行星及其生態系統、動植物及其行為模式、人造結構，外星派系及其航天飛船等幾乎所有遊戲元素都由程式生成。
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="dialog" title="Minecraft">
+        <img src="images/Minecraft.png" width="450" />
+    </div>
+</body>
+</html>

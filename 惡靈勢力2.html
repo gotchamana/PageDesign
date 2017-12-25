@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>惡靈勢力2</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="images/gamepad.png" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script src="//code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css" />
+    <script>
+        $(function () {
+            $("#dialog").dialog({
+                autoOpen: false,
+                show: {
+                    effect: "puff",
+                    duration: 1000
+                },
+                hide: {
+                    effect: "puff",
+                    duration: 1000
+                },
+                width: "500",
+                resizable: false,
+                draggable: false
+            });
+
+            $("#opener").click(function () {
+                $("#dialog").dialog("open");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header id="header">
+            <div class="inner">
+                <a href="index.html" class="logo">
+                    <span class="symbol"></span><span class="title">home</span>
+                </a>
+            </div>
+        </header>
+        <script async="async" src="https://www.youtube.com/iframe_api"></script>
+        <script>
+            function onYouTubeIframeAPIReady() {
+                var player;
+                player = new YT.Player('muteYouTubeVideoPlayer', {
+                    videoId: 'E8z945hPUpM', // YouTube 影片ID
+                    width: 512,               // 播放器寬度 (px)
+                    height: 288,              // 播放器高度 (px)
+                    playerVars: {
+                        autoplay: 1,        // 在讀取時自動播放影片
+                        controls: 1,        // 在播放器顯示暫停／播放按鈕
+                        showinfo: 0,        // 隱藏影片標題
+                        modestbranding: 0,  // 隱藏YouTube Logo
+                        loop: 0,            // 讓影片循環播放
+                        fs: 0,              // 隱藏全螢幕按鈕
+                        cc_load_policty: 0, // 隱藏字幕
+                        iv_load_policy: 3,  // 隱藏影片註解
+                        autohide: 1         // 當播放影片時隱藏影片控制列
+                    },
+                    events: {
+                        onReady: function (e) {
+                            e.target.mute();
+                        }
+                    }
+                });
+            }
+
+            // Written by @labnol 
+        </script>
+
+        <div id="main">
+            <div class="inner">
+                <h1>惡靈勢力2</h1>
+                <span class="image main">
+                    <img src="images/339.png" alt="" />
+                </span>
+                <table>
+                    <tr>
+                        <td>
+                            <p>
+                                <b>發行日期</b>  : 2009年11月17日
+                    <br />
+                                <br />
+                                <b>發行公司</b> : value
+                    <br />
+                                <br />
+                                <b>遊戲類型</b> : 第一人稱喪屍生存遊戲
+                    <br />
+                                <br />
+                                <b>同類型遊戲</b> ：<a id="opener" href="javascript:">最後生還者</a>
+                    <br />
+                                <br />
+                                <b>遊戲平台</b> : PC、Xbox 360、Xbox One
+                    <br />
+                                <br />
+                                <b>人數變化圖</b>
+                                <br />
+                                <br />
+                                <img src="images/19.png" width="512" />
+                            </p>
+                        </td>
+
+                        <td>
+                            <section style="text-align: right">
+                                <br />
+                                <script id="muteYouTubeVideoPlayer"></script>
+                            </section>
+                        </td>
+                    </tr>
+                </table>
+
+                <p style="text-align: justify">
+                    <b>遊戲內容</b>
+                    <br />
+                    <br />
+                    玩家要和其他倖存者角色（共四人）一起合作，逃離被病毒感染的區域並對抗沿路上的感染者。玩家要根據沿途所看到的指示逃到下一個安全的地方（安全室），到達指定地點後便要抵抗不斷來襲的喪屍，直到救援的來臨以離開疫區。
+                    <br />
+                    在逃亡的路上，玩家需要啟動地圖上的一些機關，好讓倖存者能夠繼續前進，但此舉會引起大量感染者的來襲。在《惡靈勢力2》中，有部份的機關被啟動後，感染者會不斷地來襲，倖存者需要去啟動另一個機關，才能停止感染者的來襲。
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="dialog" title="最後生還者">
+        <img src="images/最後生還者.png" width="450" />
+    </div>
+</body>
+</html>

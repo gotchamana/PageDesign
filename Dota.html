@@ -7,6 +7,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" href="images/gamepad.png" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <script src="//code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css" />
+    <script>
+        $(function () {
+            $("#dialog").dialog({
+                autoOpen: false,
+                show: {
+                    effect: "puff",
+                    duration: 1000
+                },
+                hide: {
+                    effect: "puff",
+                    duration: 1000
+                },
+                width: "500",
+                resizable: false,
+                draggable: false
+            });
+
+            $("#opener").click(function () {
+                $("#dialog").dialog("open");
+            });
+        });
+    </script>
+    <script>
+        $(function () {
+            $("#dialog1").dialog({
+                autoOpen: false,
+                show: {
+                    effect: "puff",
+                    duration: 1000
+                },
+                hide: {
+                    effect: "puff",
+                    duration: 1000
+                },
+                width: "500",
+                resizable: false,
+                draggable: false
+            });
+
+            $("#opener1").click(function () {
+                $("#dialog1").dialog("open");
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -68,7 +115,7 @@
                                 <b>遊戲類型</b> : DOTA(MOBA)
                     <br />
                                 <br />
-                                <b>同類型遊戲</b> : LOL、暴雪英霸
+                                <b>同類型遊戲</b> : <a id="opener" href="javascript:">LOL</a>、<a id="opener1" href="javascript:">暴雪英霸</a>
                     <br />
                                 <br />
                                 <b>遊戲平台</b> : PC、PS4、Xbox One
@@ -99,5 +146,14 @@
             </div>
         </div>
     </div>
+
+    <div id="dialog" title="LOL">
+        <img src="images/LOL.jpg" width="450" />
+    </div>
+
+    <div id="dialog1" title="暴雪英霸">
+        <img src="images/暴雪英霸.jpg" width="450" />
+    </div>
+
 </body>
 </html>

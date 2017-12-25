@@ -7,6 +7,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" href="images/gamepad.png" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <script src="//code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css" />
+    <script>
+        $(function () {
+            $("#dialog").dialog({
+                autoOpen: false,
+                show: {
+                    effect: "puff",
+                    duration: 1000
+                },
+                hide: {
+                    effect: "puff",
+                    duration: 1000
+                },
+                width: "500",
+                resizable: false,
+                draggable: false
+            });
+
+            $("#opener").click(function () {
+                $("#dialog").dialog("open");
+            });
+        });
+    </script>
+
 </head>
 
 <body>
@@ -52,7 +78,7 @@
             <div class="inner">
                 <h1>Fallout 4</h1>
                 <span class="image main">
-                    <img src="images/pic04.png" alt=""/>
+                    <img src="images/pic04.png" alt="" />
                 </span>
                 <table>
                     <tr>
@@ -67,7 +93,7 @@
                                 <b>遊戲類型</b> : 沙盒射擊遊戲
                     <br />
                                 <br />
-                                <b>同類型遊戲</b> ： Fallout 3
+                                <b>同類型遊戲</b> ：<a id="opener" href="javascript:">Fallout 3</a>
                     <br />
                                 <br />
                                 <b>遊戲平台</b> : PC、PS4、Xbox One
@@ -97,6 +123,9 @@
                 </p>
             </div>
         </div>
+    </div>
+    <div id="dialog" title="Fallout 3">
+        <img src="images/Fallout 3.jpg" width="450" />
     </div>
 </body>
 </html>

@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>劫薪日2</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="images/gamepad.png" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script src="//code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css" />
+    <script>
+        $(function () {
+            $("#dialog").dialog({
+                autoOpen: false,
+                show: {
+                    effect: "puff",
+                    duration: 1000
+                },
+                hide: {
+                    effect: "puff",
+                    duration: 1000
+                },
+                width: "500",
+                resizable: false,
+                draggable: false
+            });
+
+            $("#opener").click(function () {
+                $("#dialog").dialog("open");
+            });
+        });
+    </script>
+    <script>
+        $(function () {
+            $("#dialog1").dialog({
+                autoOpen: false,
+                show: {
+                    effect: "puff",
+                    duration: 1000
+                },
+                hide: {
+                    effect: "puff",
+                    duration: 1000
+                },
+                width: "500",
+                resizable: false,
+                draggable: false
+            });
+
+            $("#opener1").click(function () {
+                $("#dialog1").dialog("open");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header id="header">
+            <div class="inner">
+                <a href="index.html" class="logo">
+                    <span class="symbol"></span><span class="title">home</span>
+                </a>
+            </div>
+        </header>
+        <script async="async" src="https://www.youtube.com/iframe_api"></script>
+        <script>
+            function onYouTubeIframeAPIReady() {
+                var player;
+                player = new YT.Player('muteYouTubeVideoPlayer', {
+                    videoId: 'nb6oVZOeFq4', // YouTube 影片ID
+                    width: 512,               // 播放器寬度 (px)
+                    height: 288,              // 播放器高度 (px)
+                    playerVars: {
+                        autoplay: 1,        // 在讀取時自動播放影片
+                        controls: 1,        // 在播放器顯示暫停／播放按鈕
+                        showinfo: 0,        // 隱藏影片標題
+                        modestbranding: 0,  // 隱藏YouTube Logo
+                        loop: 0,            // 讓影片循環播放
+                        fs: 0,              // 隱藏全螢幕按鈕
+                        cc_load_policty: 0, // 隱藏字幕
+                        iv_load_policy: 3,  // 隱藏影片註解
+                        autohide: 1         // 當播放影片時隱藏影片控制列
+                    },
+                    events: {
+                        onReady: function (e) {
+                            e.target.mute();
+                        }
+                    }
+                });
+            }
+
+            // Written by @labnol 
+        </script>
+
+        <div id="main">
+            <div class="inner">
+                <h1>劫薪日2</h1>
+                <span class="image main">
+                    <img src="images/336.png" alt="" />
+                </span>
+                <table>
+                    <tr>
+                        <td>
+                            <p>
+                                <b>發行日期</b>  : 2013年8月13日
+                    <br />
+                                <br />
+                                <b>發行公司</b> : 505 Games
+                    <br />
+                                <br />
+                                <b>遊戲類型</b> : 第一人稱射擊遊戲
+                    <br />
+                                <br />
+                                <b>同類型遊戲</b> ：<a id="opener" href="javascript:">GTA系列</a>、<a id="opener1" href="javascript:">看門狗</a>
+                    <br />
+                                <br />
+                                <b>遊戲平台</b> : PC、PS3、PS4、Xbox 360、Xbox One
+                    <br />
+                                <br />
+                                <b>人數變化圖</b>
+                                <br />
+                                <br />
+                                <img src="images/16.png" width="512" />
+                            </p>
+                        </td>
+
+                        <td>
+                            <section style="text-align: right">
+                                <br />
+                                <script id="muteYouTubeVideoPlayer"></script>
+                            </section>
+                        </td>
+                    </tr>
+                </table>
+
+                <p style="text-align: justify">
+                    <b>遊戲內容</b>
+                    <br />
+                    <br />
+                    遊戲背景發生在前作兩年後，一個新的搶匪團來到美國華盛頓特區準備進行另一次搶劫狂歡。玩家扮演這七人搶匪團其中的一位成員，玩家可以選擇獨自行動，或是與最多三位同伴一起行動。遊戲中有各式各樣的搶劫行動，諸如搶銀行、商店和運鈔車，甚至還有製造與銷售毒品。本作相對於前作來說提供了更多玩家自定義選項、更多種類的關卡，以及重製過的潛行技巧。               
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="dialog" title="GTA系列">
+        <img src="images/GTA系列.png" width="450" />
+    </div>
+
+    <div id="dialog1" title="看門狗">
+        <img src="images/看門狗.jpg" width="450" />
+    </div>
+</body>
+</html>

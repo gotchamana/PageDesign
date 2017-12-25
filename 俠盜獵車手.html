@@ -7,6 +7,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" href="images/gamepad.png" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <script src="//code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css" />
+    <script>
+        $(function () {
+            $("#dialog").dialog({
+                autoOpen: false,
+                show: {
+                    effect: "puff",
+                    duration: 1000
+                },
+                hide: {
+                    effect: "puff",
+                    duration: 1000
+                },
+                width: "500",
+                resizable: false,
+                draggable: false
+            });
+
+            $("#opener").click(function () {
+                $("#dialog").dialog("open");
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -67,7 +92,7 @@
                                 <b>遊戲類型</b> : 沙盒射擊遊戲
                     <br />
                                 <br />
-                                <b>同類型遊戲</b> ： 看門狗
+                                <b>同類型遊戲</b> ：<a id="opener" href="javascript:">看門狗</a>
                     <br />
                                 <br />
                                 <b>遊戲平台</b> : PC、PS3、PS4、Xbox 360、Xbox One
@@ -97,6 +122,9 @@
                 </p>
             </div>
         </div>
+    </div>
+    <div id="dialog" title="看門狗">
+        <img src="images/看門狗.jpg" width="450" />
     </div>
 </body>
 </html>

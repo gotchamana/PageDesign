@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>文明帝國6</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="images/gamepad.png" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script src="//code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css" />
+    <script>
+        $(function () {
+            $("#dialog").dialog({
+                autoOpen: false,
+                show: {
+                    effect: "puff",
+                    duration: 1000
+                },
+                hide: {
+                    effect: "puff",
+                    duration: 1000
+                },
+                width: "500",
+                resizable: false,
+                draggable: false
+            });
+
+            $("#opener").click(function () {
+                $("#dialog").dialog("open");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header id="header">
+            <div class="inner">
+                <a href="index.html" class="logo">
+                    <span class="symbol"></span><span class="title">home</span>
+                </a>
+            </div>
+        </header>
+        <script async="async" src="https://www.youtube.com/iframe_api"></script>
+        <script>
+            function onYouTubeIframeAPIReady() {
+                var player;
+                player = new YT.Player('muteYouTubeVideoPlayer', {
+                    videoId: '9LPUYEmUy5U', // YouTube 影片ID
+                    width: 512,               // 播放器寬度 (px)
+                    height: 288,              // 播放器高度 (px)
+                    playerVars: {
+                        autoplay: 1,        // 在讀取時自動播放影片
+                        controls: 1,        // 在播放器顯示暫停／播放按鈕
+                        showinfo: 0,        // 隱藏影片標題
+                        modestbranding: 0,  // 隱藏YouTube Logo
+                        loop: 0,            // 讓影片循環播放
+                        fs: 0,              // 隱藏全螢幕按鈕
+                        cc_load_policty: 0, // 隱藏字幕
+                        iv_load_policy: 3,  // 隱藏影片註解
+                        autohide: 1         // 當播放影片時隱藏影片控制列
+                    },
+                    events: {
+                        onReady: function (e) {
+                            e.target.mute();
+                        }
+                    }
+                });
+            }
+
+            // Written by @labnol 
+        </script>
+
+        <div id="main">
+            <div class="inner">
+                <h1>文明帝國6</h1>
+                <span class="image main">
+                    <img src="images/338.png" alt="" />
+                </span>
+                <table>
+                    <tr>
+                        <td>
+                            <p>
+                                <b>發行日期</b>  : 2016年10月21日
+                    <br />
+                                <br />
+                                <b>發行公司</b> : Firaxis Games
+                    <br />
+                                <br />
+                                <b>遊戲類型</b> : 經典回合策略遊戲
+                    <br />
+                                <br />
+                                <b>同類型遊戲</b> ：<a id="opener" href="javascript:">世紀帝國</a>
+                    <br />
+                                <br />
+                                <b>遊戲平台</b> : PC
+                    <br />
+                                <br />
+                                <b>人數變化圖</b>
+                                <br />
+                                <br />
+                                <img src="images/18.png" width="512" />
+                            </p>
+                        </td>
+
+                        <td>
+                            <section style="text-align: right">
+                                <br />
+                                <script id="muteYouTubeVideoPlayer"></script>
+                            </section>
+                        </td>
+                    </tr>
+                </table>
+
+                <p style="text-align: justify">
+                    <b>遊戲內容</b>
+                    <br />
+                    <br />
+                    地塊會為城區會提供不同的加成，但有一定的局限性。例如，山地地形有助於觀察星空，因此能為校園型城區提供特殊的加成，但同時森林或叢林地形又能供大學和研究室在生物群落內研究物種多樣性以反映科學的進步，因此玩家需要仔細選擇。此外，玩家可以選擇攻擊一個特定城區而非城市中心，從而影響城市的運作。但是，玩家能於城區中新增新戰略以增加城市的防衛。例如在城區設置軍事營地，當敵方隊伍接近城市，他們除了遭受來自城市的攻擊外，亦會被軍事營地攻擊，令他們可能需要轉為攻擊軍事營地，再奪取城市。
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="dialog" title="世紀帝國">
+        <img src="images/世紀帝國.jpg" width="450" />
+    </div>
+</body>
+</html>
