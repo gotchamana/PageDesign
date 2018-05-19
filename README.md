@@ -5,9 +5,7 @@
 This is a **word**
 ***
 * abc
-** def
-* ghi
-  jkl
+   def
 ***
 1. abc
 2. def
@@ -15,4 +13,6 @@ This is a **word**
 >abc
 def
 ***
-This is [an example](https://google.com "Title") inline link.
+This is [an example](/index.html) inline link.
+***
+This is [an example][id] reference-style link.
