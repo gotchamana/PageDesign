@@ -5,10 +5,12 @@
 This is a **word**
 ***
 * abc
-   def
+   * def
+      * ghi
+         * jkl
 ***
 1. abc
-2. def
+   1. def
 ***
 >abc
 def
