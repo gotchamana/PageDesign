@@ -1,20 +1,2 @@
 # PageDesign
-## Test
-### test
-#### test
-This is a **word**
-***
-* abc
-   * def
-      * ghi
-         * jkl
-***
-1. abc
-   1. def
-***
->abc
-def
-***
-This is [an example](/index.html) inline link.
-***
-This is [an example][id] reference-style link.
+以介紹遊戲為主題的靜態網頁：[連結](https://gotchamana.github.io/PageDesign/index.html)
